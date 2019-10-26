@@ -18,3 +18,7 @@ variable "ResourceGroupLocation" {
   description = "The location where the resource group will be created."
 }
 
+variable "vm_size" {
+
+}
+
