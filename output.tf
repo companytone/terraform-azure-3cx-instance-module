@@ -1,8 +1,3 @@
 output "SSHCommand" {
-  value = "ssh ${var.AdminUsername}@${cloudflare_record.CFDNSRecord.hostname}"
+  value = "sshpass -p var.AdminPassword -o \"StrictHostKeyChecking no\" ssh ${var.AdminUsername}@${cloudflare_record.CFDNSRecord.hostname}"
 }
-
-output "password" {
-  value = var.AdminPassword
-}
-
