@@ -3,7 +3,7 @@ resource "azurerm_virtual_machine" "AzureVirtualMachine" {
   location                         = azurerm_resource_group.AzureResourceGroup.location
   resource_group_name              = azurerm_resource_group.AzureResourceGroup.name
   network_interface_ids            = [azurerm_network_interface.AzureNetworkInterface.id]
-  vm_size                          = var.vm_size
+  vm_size                          = var.AzureVirtualMachineSize
   delete_os_disk_on_termination    = true
   delete_data_disks_on_termination = true
 
@@ -37,4 +37,3 @@ resource "azurerm_virtual_machine" "AzureVirtualMachine" {
     disable_password_authentication = false
   }
 }
-
