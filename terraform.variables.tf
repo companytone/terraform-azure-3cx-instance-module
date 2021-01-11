@@ -20,7 +20,6 @@ variable "VendorDomainName" {
 
 variable "AzureResourceGroupLocation" {
   type        = string
-  default     = "UAE North"
   description = "The location where the resource group will be created."
 }
 
