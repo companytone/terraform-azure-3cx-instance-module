@@ -8,9 +8,9 @@ resource "azurerm_virtual_machine" "AzureVirtualMachine" {
   delete_data_disks_on_termination = true
 
   storage_image_reference {
-    publisher = "credativ"
-    offer     = "Debian"
-    sku       = "9"
+    publisher = "Debian"
+    offer     = "debian-10"
+    sku       = "10"
     version   = "latest"
   }
 
