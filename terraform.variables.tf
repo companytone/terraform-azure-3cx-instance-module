@@ -6,7 +6,7 @@ variable "AdminUsername" {
   type = string
 }
 
-variable "AdminPassword" {
+variable "AdminPublicKey" {
   type = string
 }
 
