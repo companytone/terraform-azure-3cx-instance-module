@@ -5,6 +5,7 @@ resource "azurerm_linux_virtual_machine" "AzureVirtualMachine" {
   network_interface_ids = [azurerm_network_interface.AzureNetworkInterface.id]
   size                  = var.AzureVirtualMachineSize
   admin_username        = var.AdminUsername
+  computer_name         = lower("${var.CustomerSubdomain}")
 
   os_disk {
     name                 = "${var.CustomerName}-osDisk"
