@@ -39,4 +39,6 @@ variable "cloudflare_api_key" {
   type = string
 }
 
-
+variable "file_share_quota_size" {
+  type = string
+}
