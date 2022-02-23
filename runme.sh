@@ -3,10 +3,10 @@
 # From https://linuxcommandlibrary.com/man/gh-release
 
 # get current releases
-gh release list
+# gh release list
 
 # Get latest release
-gh release list -L 1
+# gh release list -L 1
 
 CURRENT_VERSION=`gh release list -L 1 | cut -f1`
 MAJOR_VERSION=`echo $CURRENT_VERSION | cut -f1 -d'.'`
